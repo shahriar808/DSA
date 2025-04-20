@@ -1,10 +1,11 @@
 package search_problem;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class DoubleExist_L1346 {
     public boolean checkIfExist(int[] arr) {
-        HashSet<Integer> set = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
         for(int num : arr){
             if((set.contains(num * 2)) || (num % 2 == 0 && set.contains(num / 2))){
                 return true;
